@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="6.810 Team 04 Website">
+  <meta name="author" content="Jennifer Madiedo, Billy Torres">
+
+  <title>Adaptive Cornhole - Sensors</title>
+
+  <link rel="stylesheet" href="../stylesheets/layout.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class='container'>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html">Overview</a>
+      </li>
+      <li>
+        <a href="hardware.html">Hardware</a>
+      </li>
+      <li>
+        <a href="milestones.html">Milestones</a>
+      </li>
+      <li>
+        <a class="selected">User Study</a>
+      </li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>User Study</h1>
+    <h5><b>Study Design</b></h5>
+    <p>We ran a study with four different users testing our game. They all did a training session with both static and adaptive settings and a testing session immediately following each training session; two of them started with the static setting, and the other two started with adaptive.</p>
+
+    <i>Training</i>
+    <ol>
+      <li>Static condition:</li>
+        <ol>
+          <li>15 shots on easiest setting <br></li>
+          <li>15 shots on the hardest setting</li>
+        </ol>
+      <li>Adaptive condition:</li>
+      <ol>
+        <li>30 shots, while board auto-adjusts</li>
+      </ol>
+    </ol>
+
+    <i>Testing</i>
+    <ol>
+      <li>(Both conditions) Participant takes 15 shots on hardest setting.</li>
+    </ol>
+
+    <h5><b>Quantitative Results</b></h5>
+
+    <p>Half of our users showed better performance immediately following their adaptive training session. One user performed worse, and the other showed no signifcant difference.</p>
+    <p>Score was calculated using cornhole rules: 1 point per board land, 3 points for going through the hole.</p>
+
+    <i>User 1: Static first</i>
+    <ol>
+      <li><span class="green">Better after adaptive training</span></li><br>
+      <li>Score better by 4 points</li>
+    </ol>
+
+    <i>User 2: Adaptive first</i>
+    <ol>
+      <li><span class="green">Better after adaptive training</span></li><br>
+      <li>Score better by 1 point</li>
+    </ol>
+
+    <i>User 3: Static first</i>
+    <ol>
+      <li><span class="red">Better after static training</span></li><br>
+      <li>Score worse by 10 point</li>
+    </ol>
+
+    <i>User 4: Adaptive first</i>
+    <ol>
+      <li><span class="blue">No signifcant difference</span></li><br>
+      <li>Score remained the same</li>
+    </ol>
+
+    <h5><b>Qualitative Results</b></h5>
+    <p>Overall, users expressed they had fun playing and recognized its merit. All considered the idea to be novel and interesting, despite however they might have performed.</p>
+    <p>One takeaway from our conversations with them was that more transparency would be appreciated-- in other words, being very clear about when and how the board was expected to move. Another idea we got from the users was giving the player more control over the adjustments made, i.e the ability to control what moves, like choosing to hold the hole size constant and plaing with the distance adjusting faster than usual.</p>
+
+    <h5><b>Qualitative Results</b></h5>
+    <p>Our hypothesis was that training with the adaptive setting would help produce better performance in the testing session that followed compared to the static setting. We’d definitely need more (and possibly longer) tests to get a good sense of whether this is true or not. However, we think these results, both quantitative and qualitative, show a lot of promise.</p>
+    <p>Highlighting a comment made by one of the users:</p>
+    <i><q>I thought the auto-adaptive mode allowed me to improve as I went along because I had to adjust to small changes with every throw. It felt like the transition was smooth and finding a good perfect spot for difficulty ...</q></i>
+    <br><br>
+    <p>This captures the essence of what we intended with the project.</p>
+
+  </article>
+
+  <footer class="small text-muted">
+    Fall '18 6.810 Project by Jennifer Madiedo and Billy Torres (Team 04)
+  </footer>
+</div>
+</body>
+</html>

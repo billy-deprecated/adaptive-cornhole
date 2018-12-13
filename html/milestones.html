@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="6.810 Team 04 Website">
+  <meta name="author" content="Jennifer Madiedo, Billy Torres">
+
+  <title>Adaptive Cornhole - Sensors</title>
+
+  <link rel="stylesheet" href="../stylesheets/layout.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh4IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class='container'>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html">Overview</a>
+      </li>
+      <li>
+        <a href="hardware.html">Hardware</a>
+      </li>
+      <li>
+        <a class="selected">Milestones</a>
+      </li>
+      <li>
+        <a href="study.html">User Study</a>
+      </li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Milestones</h1>
+    <div id = "milestone1" class = "milestones">
+        <h4>
+          Milestone 1
+        </h4>
+        <div class = "milestoneContent">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/B6j8RFfiNVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>
+            The first milestone involved the breakbeam sensors, which would be attached around the opening to detect when the sack falls in the hole.
+            Two sensors were attached at the 1" and 2" mark respectively of the top board opening. We wired them to an arduino and wrote the code to
+            detect any breaks in the sensors. The video shows the serial logs going from 'unbroken' to 'broken' as we use our hands to break any of
+            the beams
+          </p>
+        </div>
+    </div>
+    <br>
+    <div id = "milestone2" class = "milestones">
+      <h4>
+        Milestone 2
+      </h4>
+      <div class = "milestoneContent">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8gm9FWDKMEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <p>
+            The second milestone involved the 4 wheels and 4 DC Motors, which would be attached to the bottom board to move then entire thing back and forth.
+          We attached the wheels to the dc motors, which were then mounted onto the bottom of the bottom board. We wired all the motors to a motor driver board,
+          wired the motor driver board to an arduino, and wrote the code to move the wheels. The video shows the wheels moving forward for 2 seconds, pausing,
+          and then moving backwards.
+        </p>
+      </div>
+    </div>
+    <br>
+    <div id = "milestone3" class = "milestones">
+      <h4>
+        Milestone 3
+      </h4>
+      <div class = "milestoneContent">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tDf27YVzksE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>
+          The third milestone involved the motor, rack and pinion; the rack is attached to the top sheet and the motor moves it diagonally.
+          The motor is screwed on to the base platform and rotates accordingly increase or decrease the hole size. This video shows the motor moving forward and back,
+          and the top sheet moving accordingly.
+        </p>
+      </div>
+    </div>
+    <br>
+    <div id = "milestone4" class = "milestones">
+      <h4>
+        Milestone 4
+      </h4>
+      <div class = "milestoneContent">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Jju0-3-gyGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>
+          The fourth milestone involved the camera, which would track where the sack lands relative to the board (on the board, off the board, and how far away
+          from going in). The code for the camera utilizes the openCV library. We chose this libary because it allows us to easily detect objects and calculate
+          distance using color. The video shows the algorithm detecting the board (blue outline), detecting the sack (red outline), and showing the distance
+          from the sack to the hole
+        </p>
+      </div>
+    </div>
+    <div id = "milestone5" class = "milestones">
+      <h4>
+        Milestone 5
+      </h4>
+      <div class = "milestoneContent">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/r3ZE_ewzyYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>
+          The fifth milestone involved getting the arduino and the raspberry pi communicating with eachother. This was needed since the raspberry pi will be running
+          the CV algorithm we developed in milestone 4, and sending the appropriate signals to the arduino to trigger certain functions (such as moving the board or 
+          changing the hole size. The video shows messages being passed from the arduino (serial monitor shown) to the raspberry pi (terminal shown) and back.
+        </p>
+      </div>
+    </div>
+
+      </article>
+
+  <footer class="small text-muted">
+    Fall '18 6.810 Project by Jennifer Madiedo and Billy Torres (Team 04)
+  </footer>
+</div>
+</body>
+</html>

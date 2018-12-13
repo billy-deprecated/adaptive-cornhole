@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="6.810 Team 04 Website">
+  <meta name="author" content="Jennifer Madiedo, Billy Torres">
+
+  <title>Adaptive Cornhole - Sensors</title>
+
+  <link rel="stylesheet" href="../stylesheets/layout.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class='container'>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html">Overview</a>
+      </li>
+      <li>
+        <a class="selected">Hardware</a>
+      </li>
+      <li>
+        <a href="milestones.html">Milestones</a>
+      </li>
+      <li>
+        <a href="study.html">User Study</a>
+      </li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Hardware</h1>
+
+    <!-- TODO: Add all the parts we made -->
+    <h3>Rotoscope</h3>
+      <!-- <img src="../img/cornhole.png" class="img-fluid" alt="Responsive image"> -->
+      <h6><b><i>Parts</i></b></h6>
+        <p>Our setup consists of several blocks of wood: the base platform (where the wheels are attached), the main board (where the hole is, attached to base platform with two legs), and the top sheet (L shaped, moves diagonally to adjust hole size)</p>
+        <img src="../img/cornhole.png" class="img-fluid" alt="Responsive image">
+    <br>
+
+    <h3>Sensors</h3>
+      <h6><b><i>Break beam sensors</i></b></h6>
+        <p>We have six pairs of break beam sensors, placed on the bottom facing side of the main board around square hole.</p>
+        <p>These allows us to know when the player scores by detecting when the sack goes into the hole.</p>
+
+      <h6><b><i>Camera</i></b></h6>
+        <p>We have a webcam placed just before the board.</p>
+        <p>Using this camera and a computer vision program allows us to know where the player is throwing the sack, to give us a better sense of their overall accuracy.</p>
+
+    <br>
+
+    <h3>Actuators</h3>
+      <h6><b><i>Wheels</i></b></h6>
+        <p>We have four wheels placed by the corners of the base platform.</p>
+        <p>These move the entire system forward and back according to how far off the player is from hitting the board.</p>
+
+      <h6><b><i>Continuous Rotation Servo Motor</i></b></h6>
+        <p>We have a rack attacked to the top sheet and a motorized pinion on the base platform.</p>
+        <p>The motor rotates the pinion, moving the top sheet across the diagonal of the main board. This adjust the size of the hole depending on how often the user is getting the sack inside.</p>
+
+    <br>
+
+    <h3>Electronics</h3>
+      <h6><b><i>4WD L298N Motor Driver Board Dual H Bridge DC</i></b></h6>
+        <p> Driver board to connect the DC wheel motors to the arduino
+        </p>
+      <h6><b><i>Arduino Board</i></b></h6>
+        <p>A single arduino board is responsbile for receiving data from the breakbeam sensors, controlling the DC motors that move the wheels,
+          and the servo motor that moves the top sheet back and forth.
+        </p>
+      <h6><b><i>Raspberry Pi</i></b></h6>
+        <p>A single raspberry pi runs the computer vision program. It also received the breakbeam sensor data, and in combination with the results from the CV program,
+          sends updates back to the arduino to move the wheels or the top sheet (Ended up not using in final demo due to latency)
+        </p>
+
+      <br>
+      <h3>3D Visualization</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AyWCXfZCvQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </article>
+
+  <footer class="small text-muted">
+    Fall '18 6.810 Project by Jennifer Madiedo and Billy Torres (Team 04)
+  </footer>
+</div>
+</body>
+</html>
